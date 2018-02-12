@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Notes</title>
+</head>
+<body>
+
+    <!--This line gives me an empty text box to input text/letters!  -->
+    <input type="text" id = "textInput">
+
+    <!-- This line create a button for me named "Change ME" -->
+    <button id="text input">Change Me</button>
+
+    <!-- This line is where the new text changes the old text -->
+    <p id="newText">This is some text</p>
+
+    <!-- here is where we start to give our html life! -->
+    <script type="text/javascript">
+
+        // this line is grabbing the Id "text input" giving it a click function that is activated when clicked and released.
+        document.getElementById("text input").onclick = function() {
+
+            //we are assigning the variable "textEntered" to an empty string! letting the browser know this will be a string
+            var textEntered = "";
+
+            // We take "textEntered" and set it to whatever the value was entered in the "input type= text" box. to do this we set an "Id" to our "input type=text" box
+            // and then we want to get the value, so we end it off with ".value"
+            textEntered = document.getElementById("textInput").value;
+
+            //This sets the textEnetered value to our "newText"
+            document.getElementById("newText").innerHTML = textEntered;
+        }
+      
+    </script>
+    
+</body>
+</html>
